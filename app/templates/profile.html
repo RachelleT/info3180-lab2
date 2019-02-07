@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block main %}
+<body>
+<div id='bg'>
+	<br>
+	<img src="{{ url_for('static',filename='girl.jpeg') }}">
+	<br>
+	<h1> Rachelle Trotman </h1>
+	@rtrotman
+	<br>
+	Bridgetown, Barbados
+	<br>
+	<p> {{ datejoined }} </p>
+</div>
+<div>
+	<p> I am a smart and talented young woman who loves Computer Science. Contact me if you would like to work on a new project. </p>
+	<br>
+	<div id='box1'>
+	7 <br> Posts
+	</div>
+	<div id='box2'>
+	100 <br> Following
+	</div>
+	<div id='box3'>
+	250 <br> Followers
+	</div>
+	<br>
+	 <button type="button">Follow</button> 	
+</div>
+</body>
+{% endblock %}
